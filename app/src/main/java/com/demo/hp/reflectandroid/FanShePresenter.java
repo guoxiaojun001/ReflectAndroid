@@ -20,11 +20,19 @@ public class FanShePresenter {
     }
 
     public void getProsenName() {
-        Toast.makeText(mContext, "习大大", Toast.LENGTH_LONG).show();
+        Toast.makeText(mContext, "习大大", Toast.LENGTH_SHORT).show();
     }
 
     private void getProsenaddress() {
-        Toast.makeText(mContext, "北京天安门", Toast.LENGTH_LONG).show();
+        Toast.makeText(mContext, "北京天安门", Toast.LENGTH_SHORT).show();
     }
 
+
+    private void withParam1(String parm) {
+        Toast.makeText(mContext, "接收参数 = " + parm, Toast.LENGTH_SHORT).show();
+    }
+
+    private void withParam2(String parm1,String parm2) {
+        Toast.makeText(mContext, "接收参数 = " + parm1 + parm2, Toast.LENGTH_SHORT).show();
+    }
 }
